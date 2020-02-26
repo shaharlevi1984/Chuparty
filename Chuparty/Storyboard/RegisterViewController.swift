@@ -28,7 +28,18 @@ class RegisterViewController: UIViewController {
     
     
     @IBAction func SubmitButton(_ sender: Any) {
+        guard let email = EmailText.text, email.inNotNull,
+            let password = PasswordText.text, password.inNotNull else { return }
         
+        Auth.auth().createUser(withEmail: email, password: password) { (authResult, error) in
+            
+            if let error = error {
+                debugPrint(error.localizedDescription)
+            }
+            
+            guard let user = authResult?.user else {return}
+            self.dismiss(animated: true, completion: nil)
+        }
     }
     
 

@@ -31,6 +31,6 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func RegisterButton(_ sender: UIButton) {
-        perform(withIdentifier: "toRegister", sender: self)
+        performSegue(withIdentifier: "toRegister", sender: self)
     }
 }
