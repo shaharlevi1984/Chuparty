@@ -35,14 +35,15 @@ class RegisterViewController: UIViewController {
         Auth.auth().createUser(withEmail: email, password: password) { (authResult, error) in
             
             if let error = error {
+                self.handleFireAuthError(error)
                 debugPrint(error.localizedDescription)
+                return
             }
             
-            guard let user = authResult?.user else {return}
-            self.dismiss(animated: true, completion: nil)
+            Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
+                self.dismiss(animated: true, completion: nil)
+            }
         }
     }
-    
-
-
 }
+
