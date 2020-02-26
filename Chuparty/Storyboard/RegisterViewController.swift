@@ -22,6 +22,7 @@ class RegisterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.8352941176, green: 0.3921568627, blue: 0.3137254902, alpha: 1)
+        PasswordText.rightViewMode = .always
 
         // Do any additional setup after loading the view.
     }

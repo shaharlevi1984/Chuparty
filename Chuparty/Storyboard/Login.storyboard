@@ -10,7 +10,7 @@
         <!--Login View Controller-->
         <scene sceneID="1Dn-YE-bVF">
             <objects>
-                <viewController storyboardIdentifier="LoginViewController" id="4eb-Yl-5cY" customClass="LoginViewController" customModule="Chuparty" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="4eb-Yl-5cY" customClass="LoginViewController" customModule="Chuparty" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="a1Q-0l-Ypa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -38,7 +38,7 @@
                                             <constraint firstAttribute="height" constant="40" id="8JD-cV-jDi"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wa9-oD-Imp">
                                         <rect key="frame" x="0.0" y="278" width="374" height="40"/>
@@ -102,7 +102,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h3x-60-ANo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1005.7971014492755" y="75.669642857142847"/>
+            <point key="canvasLocation" x="2826.0869565217395" y="75.669642857142847"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="bda-je-Mmb">
@@ -143,7 +143,7 @@
                                             <constraint firstAttribute="height" constant="40" id="nPm-xH-Rga"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirn Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lTG-W7-gzo">
                                         <rect key="frame" x="0.0" y="348" width="374" height="40"/>
@@ -151,7 +151,7 @@
                                             <constraint firstAttribute="height" constant="40" id="eAQ-8O-ojN"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oU8-5E-E2f">
                                         <rect key="frame" x="0.0" y="433" width="374" height="40"/>
@@ -188,25 +188,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ujh-F9-eIg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1750.7246376811595" y="75.669642857142847"/>
+            <point key="canvasLocation" x="3571.0144927536235" y="75.669642857142847"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="HtD-3I-1am">
+        <scene sceneID="oGk-01-ba8">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Zsv-0N-9V3" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="LoginViewController" automaticallyAdjustsScrollViewInsets="NO" id="jJ3-AA-rHb" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UOx-gK-LsW">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="849-pI-FnR">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="4eb-Yl-5cY" kind="relationship" relationship="rootViewController" id="Y8D-sr-6IW"/>
+                        <segue destination="4eb-Yl-5cY" kind="relationship" relationship="rootViewController" id="jDX-QI-MeC"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yh5-1o-SSU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PdX-63-YZd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="95.652173913043484" y="75.669642857142847"/>
+            <point key="canvasLocation" x="1915.9420289855075" y="75.669642857142847"/>
         </scene>
     </scenes>
 </document>

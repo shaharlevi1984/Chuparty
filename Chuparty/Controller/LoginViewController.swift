@@ -25,6 +25,18 @@ class LoginViewController: UIViewController {
     // Buttons
     
     @IBAction func ForgotPasswordButton(_ sender: UIButton) {
+        guard let email = EmailText.text else { return }
+        Auth.auth().sendPasswordReset(withEmail: email) { (error) in
+            if let error = error{
+                //handler
+          }
+        
+        
+        let alert = UIAlertController(title: "Check your Email", message: "", preferredStyle: UIAlertController.Style.alert)
+        let okButton = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+        alert.addAction(okButton)
+        self.present(alert, animated: true, completion: nil)
+      }
     }
     
     @IBAction func LoginButton(_ sender: Any) {
@@ -32,6 +44,10 @@ class LoginViewController: UIViewController {
               let password = PasswordText.text, password.inNotNull else { return }
         
         Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
+            if let error = error {
+                debugPrint(error.localizedDescription)
+            }
+                        
              self.dismiss(animated: true, completion: nil)
         }
     }

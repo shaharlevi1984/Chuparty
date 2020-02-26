@@ -18,6 +18,8 @@
 		0F926AE62406CB9E00FD3A29 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F926AE52406CB9E00FD3A29 /* LoginViewController.swift */; };
 		0F926AEA2406EED800FD3A29 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F926AE92406EED800FD3A29 /* RegisterViewController.swift */; };
 		0F926AED2406F69400FD3A29 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F926AEC2406F69400FD3A29 /* Extension.swift */; };
+		0F926AF12406FB4A00FD3A29 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F926AEF2406FB4A00FD3A29 /* ResetPasswordViewController.swift */; };
+		0F926AF22406FB4A00FD3A29 /* ResetPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F926AF02406FB4A00FD3A29 /* ResetPasswordViewController.xib */; };
 		DB2456F4726688B8A3615E04 /* Pods_Chuparty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 731F164691C698D9B3004C5A /* Pods_Chuparty.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +37,8 @@
 		0F926AE52406CB9E00FD3A29 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0F926AE92406EED800FD3A29 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RegisterViewController.swift; path = Chuparty/Storyboard/RegisterViewController.swift; sourceTree = SOURCE_ROOT; };
 		0F926AEC2406F69400FD3A29 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		0F926AEF2406FB4A00FD3A29 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
+		0F926AF02406FB4A00FD3A29 /* ResetPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResetPasswordViewController.xib; sourceTree = "<group>"; };
 		731F164691C698D9B3004C5A /* Pods_Chuparty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chuparty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D84224158ED817217BA400A /* Pods-Chuparty.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chuparty.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Chuparty/Pods-Chuparty.debug.xcconfig"; sourceTree = "<group>"; };
 		9AB789D15D402B89485361D2 /* Pods-Chuparty.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chuparty.release.xcconfig"; path = "Pods/Target Support Files/Pods-Chuparty/Pods-Chuparty.release.xcconfig"; sourceTree = "<group>"; };
@@ -73,6 +77,7 @@
 		0F926ACC2406C47000FD3A29 /* Chuparty */ = {
 			isa = PBXGroup;
 			children = (
+				0F926AEE2406FAFB00FD3A29 /* Xibs */,
 				0F926AEB2406F65F00FD3A29 /* Extensions */,
 				0F926AE82406CBB500FD3A29 /* Controller */,
 				0F926AE72406CBA800FD3A29 /* Storyboard */,
@@ -111,6 +116,15 @@
 				0F926AEC2406F69400FD3A29 /* Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0F926AEE2406FAFB00FD3A29 /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				0F926AEF2406FB4A00FD3A29 /* ResetPasswordViewController.swift */,
+				0F926AF02406FB4A00FD3A29 /* ResetPasswordViewController.xib */,
+			);
+			path = Xibs;
 			sourceTree = "<group>";
 		};
 		759A9E6FFC6B1E7FECFD7E4D /* Pods */ = {
@@ -195,6 +209,7 @@
 				0F926AD72406C47100FD3A29 /* Assets.xcassets in Resources */,
 				0F926AE42406C94700FD3A29 /* Login.storyboard in Resources */,
 				0F926AD52406C47000FD3A29 /* Main.storyboard in Resources */,
+				0F926AF22406FB4A00FD3A29 /* ResetPasswordViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +271,7 @@
 				0F926AED2406F69400FD3A29 /* Extension.swift in Sources */,
 				0F926ACE2406C47000FD3A29 /* AppDelegate.swift in Sources */,
 				0F926AD02406C47000FD3A29 /* SceneDelegate.swift in Sources */,
+				0F926AF12406FB4A00FD3A29 /* ResetPasswordViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
