@@ -14,6 +14,8 @@
 		0F926AD72406C47100FD3A29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F926AD62406C47100FD3A29 /* Assets.xcassets */; };
 		0F926ADA2406C47100FD3A29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F926AD82406C47100FD3A29 /* LaunchScreen.storyboard */; };
 		0F926AE22406C55200FD3A29 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F926AE12406C55200FD3A29 /* GoogleService-Info.plist */; };
+		0F926AE42406C94700FD3A29 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F926AE32406C94700FD3A29 /* Login.storyboard */; };
+		0F926AE62406CB9E00FD3A29 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F926AE52406CB9E00FD3A29 /* LoginViewController.swift */; };
 		DB2456F4726688B8A3615E04 /* Pods_Chuparty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 731F164691C698D9B3004C5A /* Pods_Chuparty.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +29,8 @@
 		0F926AD92406C47100FD3A29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0F926ADB2406C47100FD3A29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F926AE12406C55200FD3A29 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0F926AE32406C94700FD3A29 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		0F926AE52406CB9E00FD3A29 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		731F164691C698D9B3004C5A /* Pods_Chuparty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chuparty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D84224158ED817217BA400A /* Pods-Chuparty.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chuparty.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Chuparty/Pods-Chuparty.debug.xcconfig"; sourceTree = "<group>"; };
 		9AB789D15D402B89485361D2 /* Pods-Chuparty.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chuparty.release.xcconfig"; path = "Pods/Target Support Files/Pods-Chuparty/Pods-Chuparty.release.xcconfig"; sourceTree = "<group>"; };
@@ -65,16 +69,34 @@
 		0F926ACC2406C47000FD3A29 /* Chuparty */ = {
 			isa = PBXGroup;
 			children = (
+				0F926AE82406CBB500FD3A29 /* Controller */,
+				0F926AE72406CBA800FD3A29 /* Storyboard */,
 				0F926ACD2406C47000FD3A29 /* AppDelegate.swift */,
 				0F926ACF2406C47000FD3A29 /* SceneDelegate.swift */,
-				0F926AD12406C47000FD3A29 /* ViewController.swift */,
-				0F926AD32406C47000FD3A29 /* Main.storyboard */,
 				0F926AD62406C47100FD3A29 /* Assets.xcassets */,
-				0F926AD82406C47100FD3A29 /* LaunchScreen.storyboard */,
 				0F926AE12406C55200FD3A29 /* GoogleService-Info.plist */,
 				0F926ADB2406C47100FD3A29 /* Info.plist */,
 			);
 			path = Chuparty;
+			sourceTree = "<group>";
+		};
+		0F926AE72406CBA800FD3A29 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				0F926AD32406C47000FD3A29 /* Main.storyboard */,
+				0F926AD82406C47100FD3A29 /* LaunchScreen.storyboard */,
+				0F926AE32406C94700FD3A29 /* Login.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		0F926AE82406CBB500FD3A29 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0F926AD12406C47000FD3A29 /* ViewController.swift */,
+				0F926AE52406CB9E00FD3A29 /* LoginViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		759A9E6FFC6B1E7FECFD7E4D /* Pods */ = {
@@ -157,6 +179,7 @@
 				0F926ADA2406C47100FD3A29 /* LaunchScreen.storyboard in Resources */,
 				0F926AE22406C55200FD3A29 /* GoogleService-Info.plist in Resources */,
 				0F926AD72406C47100FD3A29 /* Assets.xcassets in Resources */,
+				0F926AE42406C94700FD3A29 /* Login.storyboard in Resources */,
 				0F926AD52406C47000FD3A29 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,6 +236,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F926AE62406CB9E00FD3A29 /* LoginViewController.swift in Sources */,
 				0F926AD22406C47000FD3A29 /* ViewController.swift in Sources */,
 				0F926ACE2406C47000FD3A29 /* AppDelegate.swift in Sources */,
 				0F926AD02406C47000FD3A29 /* SceneDelegate.swift in Sources */,
