@@ -27,10 +27,16 @@ class LoginViewController: UIViewController {
     @IBAction func ForgotPasswordButton(_ sender: UIButton) {
     }
     
-    @IBAction func LoginButton(_ sender: UIButton) {
+    @IBAction func LoginButton(_ sender: Any) {
+        guard let email = EmailText.text, email.inNotNull,
+              let password = PasswordText.text, password.inNotNull else { return }
+        
+        Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
+             self.dismiss(animated: true, completion: nil)
+        }
     }
     
-    @IBAction func RegisterButton(_ sender: UIButton) {
+    @IBAction func RegisterButton(_ sender: Any) {
         performSegue(withIdentifier: "toRegister", sender: self)
     }
 }
